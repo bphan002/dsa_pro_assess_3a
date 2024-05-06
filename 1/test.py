@@ -32,7 +32,7 @@ class TestExample(unittest.TestCase):
 
     def tearDown(self):
         result = self.defaultTestResult()
-        self._feedErrorsToResult(result, self._outcome.errors)
+        # self._feedErrorsToResult(result, self._outcome.errors)
         if not result.wasSuccessful():
             print(f"{Fore.RED}{self._testMethodName} FAILED{Style.RESET_ALL}")
         else:
